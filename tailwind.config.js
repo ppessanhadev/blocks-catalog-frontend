@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       colors: {
         'blocks-black': '#202020',
-        'blocks-gray': '#322E2E',
+        'blocks-zinc': '#322E2E',
+        'blocks-hover': '#7972ad',
         'blocks-banner': '#242424',
         'blocks-gray': '#CCCCCC',
         'blocks-section': '#FBFBFB',
