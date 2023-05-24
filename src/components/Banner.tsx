@@ -6,8 +6,8 @@ export const Banner = ({ children }: ScriptProps) => {
   const scrollPos = useScrollPosition();
 
   return (
-    <div className={scrollPos <= 50 ? 'blocks-banner' : 'blocks-banner-opacity'}>
+    <nav className={scrollPos <= 50 ? 'blocks-banner' : 'blocks-banner-opacity'}>
       <p className="text-white">{children}</p>
-    </div>
+    </nav>
   );
 };

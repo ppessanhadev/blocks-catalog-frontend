@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 export const FamilyCard = () => (
-  <article className="relative w-48 h-64 border border-blocks-gray rounded-xl">
+  <article className="relative w-56 h-72 md:w-48 md:h-64 border border-blocks-gray rounded-xl">
     <div className="flex justify-around absolute bottom-0 w-full rounded-b-xl border-t border-t-blocks-gray p-2 ">
       <p className="inline text-blocks-black text-xs font-semibold w-36 leading-3">
         Lorem Ipsum is sLorem Ipsum is simply ....
