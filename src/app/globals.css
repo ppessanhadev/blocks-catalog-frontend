@@ -5,3 +5,17 @@
 body {
   background-color: #FBFBFB;
 }
+
+@layer components {
+  .blocks-gradient {
+    @apply bg-gradient-to-r from-blocks-purple to-blocks-pink;
+  }
+
+  .blocks-banner {
+   @apply sticky top-0 p-5 z-10 backdrop-blur-md bg-blocks-banner text-center w-full transition-all;
+  }
+
+  .blocks-banner-opacity {
+   @apply sticky top-0 p-5 z-10 backdrop-blur-md bg-blocks-banner/70 text-center w-full transition-all;
+  }
+}
