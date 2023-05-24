@@ -17,6 +17,9 @@ module.exports = {
         'blocks-footer': '#E9E9E9',
       },
     },
+    fontFamily: {
+      body: ['"Open Sans"'],
+    },
   },
   plugins: [],
 };
