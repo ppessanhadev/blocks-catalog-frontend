@@ -5,9 +5,15 @@ import { getFamilies } from '@/services/GetFamilies';
 
 export function useFamilies() {
   const [skip, setSkip] = useState(50);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [families, setFamilies] = useState<Family[]>([]);
   const hasMoreContent = families.length < 1000;
+
+  useEffect(() => {
+    getFamilies()
+      .then(setFamilies)
+      .finally(() => setIsLoading(false));
+  }, []);
 
   const next = async () => {
     setIsLoading(true);
@@ -25,10 +31,6 @@ export function useFamilies() {
     windowScroll: true,
     hasMore: { down: hasMoreContent },
   }) as RefObject<HTMLElement>;
-
-  useEffect(() => {
-    getFamilies().then(setFamilies);
-  }, []);
 
   return { ref, families, isLoading };
 }
