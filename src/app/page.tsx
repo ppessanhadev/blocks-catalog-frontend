@@ -12,8 +12,6 @@ export default function Home() {
       <Header />
 
       <Section name="Catálogo" />
-
-      <div className="w-screen h-screen" />
     </main>
   );
 }
