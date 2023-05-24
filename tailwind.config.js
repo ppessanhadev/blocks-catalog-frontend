@@ -11,6 +11,7 @@ module.exports = {
         'blocks-black': '#202020',
         'blocks-gray': '#322E2E',
         'blocks-banner': '#242424',
+        'blocks-gray': '#CCCCCC',
         'blocks-section': '#FBFBFB',
         'blocks-purple': '#A11CF3',
         'blocks-pink': '#D835C5',
