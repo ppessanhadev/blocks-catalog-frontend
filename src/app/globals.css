@@ -4,6 +4,8 @@
 
 body {
   background-color: #FBFBFB;
+  position: relative;
+  min-height: 100vh;
 }
 
 @layer components {
