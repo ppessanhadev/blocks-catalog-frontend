@@ -1,6 +1,7 @@
 'use client';
-import { FamilyCard } from '@/components/Catalog/FamilyCard';
+import { Loading } from '@/components/Loading';
 import { useFamilies } from '@/hooks/useFamilies';
+import { FamilyCard } from '@/components/Catalog/FamilyCard';
 
 export const Catalog = () => {
   const { ref, families, isLoading } = useFamilies();
@@ -13,8 +14,8 @@ export const Catalog = () => {
         {families.map((family) => (
           <FamilyCard key={family.id} family={family} />
         ))}
-        {isLoading && <p>Carregando...</p>}
       </main>
+      {isLoading && <Loading />}
     </section>
   );
 };
