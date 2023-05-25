@@ -3,7 +3,7 @@ Essa aplicação é voltada para um desafio do qual seu objetivo é criar uma SP
 Eu tomei a liberdade de fazer um deploy da aplicação pela [Vercel](https://www.vercel.com) e ela pode ser acessada por [esse link](https://blocks-catalog-frontend-ppessanhadev.vercel.app).
 
 ### Overview
-Durante o desenvolvimento optei por utilizar como biblioteca principal o [Next 13](https://nextjs.org), me bassei sua própria documentação para de definir e configurar o projeto de forma concisa, e os motivos em utiliza-lo foram para mais versatilidade, ganhos de renderização com ssr (server side rendering), facilitação com roteamento, maior performance entre outras vantagens.
+Durante o desenvolvimento optei por utilizar como biblioteca principal o [Next 13](https://nextjs.org), me consisti em sua documentação para definir e configurar o projeto de forma concisa, e os motivos em utiliza-lo foram para mais versatilidade, ganhos de renderização com ssr (server side rendering), facilitação com roteamento, maior performance entre outras vantagens.
 
 A aplicação em sí se comunica com uma API fornecida fornecida no pela repositório de referencia a esse teste, e pode ser [encontrada aqui](https://github.com/blocksrvt/frontend-test).
 
