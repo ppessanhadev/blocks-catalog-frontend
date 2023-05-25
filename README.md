@@ -35,5 +35,5 @@ O projeto em si foi desenvolvido utilizado o gerenciador de pacote [pnpm](https:
 2. `pnpm install`
 2. `pnpm dev`
 
-
+**OBS**: para rodar a aplicação é necessário que a versão do node seja maior ou igual a v18
 >> A aplicação estará rodando em: http://localhost:3000
