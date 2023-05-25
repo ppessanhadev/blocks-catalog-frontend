@@ -1,13 +1,14 @@
 import { RefObject, useState, useEffect } from 'react';
 import useInfiniteScroll from 'react-easy-infinite-scroll-hook';
 import { Family } from '@/types/Family';
+import { config } from '@/utils/config';
 import { getFamilies } from '@/services/GetFamilies';
 
 export function useFamilies() {
   const [skip, setSkip] = useState(50);
   const [isLoading, setIsLoading] = useState(true);
   const [families, setFamilies] = useState<Family[]>([]);
-  const hasMoreContent = families.length < 1000;
+  const hasMoreContent = families.length < config.families.max_content_quantity;
 
   useEffect(() => {
     getFamilies()
