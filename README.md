@@ -1,6 +1,6 @@
 # Blocks catalog | Desafio frontend
 Essa aplicação é voltada para um desafio do qual seu objetivo é criar uma SPA contendo catálogo de familias.
-Eu tomei a liberdade de fazer um deploy da aplicação pela [Vercel](https://www.vercel.com) e ela pode ser acessada por ~~[esse link]()~~.
+Eu tomei a liberdade de fazer um deploy da aplicação pela [Vercel](https://www.vercel.com) e ela pode ser acessada por [esse link](https://blocks-catalog-frontend-lklwwcr21-ppessanhadev.vercel.app).
 
 ### Overview
 Durante o desenvolvimento optei por utilizar como biblioteca principal o [Next 13](https://nextjs.org), me bassei sua própria documentação para de definir e configurar o projeto de forma concisa, e os motivos em utiliza-lo foram para mais versatilidade, ganhos de renderização com ssr (server side rendering), facilitação com roteamento, maior performance entre outras vantagens.
