@@ -10,7 +10,7 @@ export const Catalog = () => {
     <section className="px-16 lg:px-48 m-auto py-8">
       <h3 className="text-blocks-black text-2xl font-medium p-2">Resultados</h3>
 
-      <main className="flex flex-wrap justify-center gap-4 pb-16" ref={ref}>
+      <main className="flex flex-wrap justify-center gap-4 pb-36 md:pb-16" ref={ref}>
         {families.map((family) => (
           <FamilyCard key={family.id} family={family} />
         ))}
