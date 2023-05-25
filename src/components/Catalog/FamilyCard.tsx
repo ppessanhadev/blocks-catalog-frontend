@@ -1,7 +1,8 @@
 import Image from 'next/image';
+import { useState } from 'react';
 import { ScriptProps } from 'next/script';
 import { Family } from '@/types/Family';
-import { useState } from 'react';
+import { config } from '@/utils/config';
 
 interface FamilyCardProps extends ScriptProps {
   family: Family;
@@ -9,7 +10,7 @@ interface FamilyCardProps extends ScriptProps {
 
 export const FamilyCard = ({ family }: FamilyCardProps) => {
   const [error, setError] = useState(false);
-  const imageSrc = `https://plugin-storage.nyc3.digitaloceanspaces.com/families/images/${family?.id}.jpg`;
+  const imageSrc = config.baseUrl.images + `/${family?.id}.jpg`;
 
   return (
     <article className="relative w-56 h-72 md:w-48 md:h-64 border border-blocks-gray rounded-xl">
