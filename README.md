@@ -1,34 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blocks catalog | Desafio frontend
+Essa aplicação é voltada para um desafio do qual seu objetivo é criar uma SPA contendo catálogo de familias.
 
-## Getting Started
+Eu tomei a liberdade de fazer um deploy da aplicação pela [Vercel](https://www.vercel.com) e ela pode ser acessada por ~~[esse link]()~~.
 
-First, run the development server:
+### Overview
+Durante o desenvolvimento optei por utilizar como biblioteca principal o [Next 13](https://nextjs.org), me bassei sua própria documentação para de definir e configurar o projeto de forma concisa, e os motivos em utiliza-lo foram para mais versatilidade, ganhos de renderização com ssr (server side rendering), facilitação com roteamento, maior performance entre outras vantagens.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+A aplicação em sí se comunica com uma API fornecida fornecida no pela repositório de referencia a esse teste, e pode ser [encontrada aqui](https://github.com/blocksrvt/frontend-test).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Bibliotecas**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Escolhi por utilizar algumas bibliotecas para maior facilidade de implementações, elas foram:
+- [axios](https://axios-http.com/ptbr/) por simplificar e tornar mais simples algumas configurações como tempo limite e a implementação de parâmetros sem a necessidade de colocar diretamente a url.
+- [react-easy-infinite-scroll](https://www.npmjs.com/package/react-easy-infinite-scroll-hook) para implementar o carregamento e requisições conforme o usuário desce a página
+- [tailwind](https://tailwindcss.com) para estilização geral de toda a aplicação e simplicidade em aplicar responsividade ao projeto.
+- [prettier](https://prettier.io/) e [eslint](https://eslint.org/) para consistência e padronização de código
 
-## Learn More
+**Páginas**
+Como está aplicação é uma SPA, então ela possuí apenas a página inicial, sendo ela:
 
-To learn more about Next.js, take a look at the following resources:
+| Página | Descrição                                       |
+|--------|-------------------------------------------------|
+| /      | Página voltada listagem de familias disponiveis |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Como rodar o projeto
+A partir da raiz do projeto em seu terminal, siga os próximos passos para rodar localmente:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Rodando localmente com pnpm**
 
-## Deploy on Vercel
+O projeto em si foi desenvolvido utilizado o gerenciador de pacote [pnpm](https://pnpm.io), para instalar, no seu terminal execute o comando `npm i -g pnpm`, e siga os próximos passos:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. `cp .env.example .env`
+2. `pnpm install`
+2. `pnpm dev`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+>> A aplicação estará rodando em: http://localhost:3000
