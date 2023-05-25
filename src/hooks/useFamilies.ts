@@ -7,7 +7,7 @@ export function useFamilies() {
   const [skip, setSkip] = useState(50);
   const [isLoading, setIsLoading] = useState(true);
   const [families, setFamilies] = useState<Family[]>([]);
-  const hasMoreContent = families.length < 200;
+  const hasMoreContent = families.length < 1000;
 
   useEffect(() => {
     getFamilies()
