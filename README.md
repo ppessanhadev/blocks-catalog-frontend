@@ -1,6 +1,5 @@
 # Blocks catalog | Desafio frontend
 Essa aplicação é voltada para um desafio do qual seu objetivo é criar uma SPA contendo catálogo de familias.
-
 Eu tomei a liberdade de fazer um deploy da aplicação pela [Vercel](https://www.vercel.com) e ela pode ser acessada por ~~[esse link]()~~.
 
 ### Overview
@@ -18,6 +17,7 @@ Escolhi por utilizar algumas bibliotecas para maior facilidade de implementaçõ
 - [prettier](https://prettier.io/) e [eslint](https://eslint.org/) para consistência e padronização de código
 
 **Páginas**
+
 Como está aplicação é uma SPA, então ela possuí apenas a página inicial, sendo ela:
 
 | Página | Descrição                                       |
